@@ -19,7 +19,8 @@ class TestRoom(unittest.TestCase):
         self.guest_1 = Guest("Eddie", 50, self.song_1)
         self.guest_2 = Guest("Gina", 60, self.song_2)
         self.guest_3 = Guest("Rocko", 50, self.song_3)
-        self.room = Room("Rock Room", ["john"], [], 3, 10, 100, [self.drink_1, self.drink_2])
+        self.guest_4 = Guest("Felix", 100, self.song_1)
+        self.room = Room("Rock Room", [self.guest_4], [], 3, 10, 100, [self.drink_1, self.drink_2])
 
     def test_room_has_name(self):
         self.assertEqual("Rock Room", self.room.name)

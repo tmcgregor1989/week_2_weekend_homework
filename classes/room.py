@@ -52,3 +52,4 @@ class Room:
         guest.wallet -= drink.price
         self.till += drink.price
         
+
