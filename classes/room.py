@@ -51,3 +51,4 @@ class Room:
     def sell_drink_to_guest(self, guest, drink):
         guest.wallet -= drink.price
         self.till += drink.price
+        
